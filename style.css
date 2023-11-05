@@ -1,0 +1,94 @@
+body {
+    background-color: burlywood;
+}
+
+@keyframes spin {
+    form {
+        /* transform: rotate(45deg); */
+    }
+    to {
+        transform: rotate(0deg);
+        /* opacity: 1; */
+    }
+    /* 0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0.1;
+    } */
+    100% {
+        opacity: 1;
+    }
+}
+
+.rect {
+    /* animation: spin 1.5s; */
+    animation: 0.5s infinite alternate spin;
+    /* animation-fill-mode: forwards; */
+    fill: blue;
+    transform-origin: bottom left;
+    transform: rotate(0deg);
+    /* transform-origin: 50% 75%; */
+    /* transform-origin: 50% 35%; */
+    /* opacity: 0; */
+    /* transition: all 1s ease; */
+    /* transform: translateX(100%); */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    display: flex;
+}
+
+.dark-6 {
+    fill: #005244;
+    animation: 1.5s forwards infinite spin;
+    transform-origin: 301px 362.5px;
+    transform: rotate(90deg);
+    /* opacity: 0; */
+}
+
+.dark-5 {
+    fill: #005244;
+    animation: 1.5s forwards infinite spin;
+    transform-origin: 327px 328px;
+    transform: rotate(90deg);
+    /* opacity: 0; */
+}
+
+.dark-4 {
+    fill: #005244;
+    animation: 1.5s forwards infinite spin;
+    transform-origin: 341px 288px;
+    transform: rotate(100deg);
+    opacity: 0;
+}
+
+.dark-3 {
+    fill: #005244;
+    animation: 1.5s forwards infinite spin;
+    transform-origin: 355px 233px;
+    transform: rotate(120deg);
+    opacity: 0;
+}
+
+.dark-2 {
+    fill: #005244;
+    animation: 1.5s forwards infinite spin;
+    transform-origin: 354px 194px;
+    transform: rotate(150deg);
+    opacity: 0;
+}
+
+.dark-1 {
+    fill: #005244;
+    animation: 1.5s forwards infinite spin;
+    transform-origin: 319.5px 153px;
+    transform: rotate(60deg);
+    opacity: 0;
+}
